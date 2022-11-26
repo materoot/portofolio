@@ -1,0 +1,40 @@
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #FFF;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+
+img.logo{
+    height: 50px;
+    width: 200px;
+    padding-top: 30px;
+}
